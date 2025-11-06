@@ -23,16 +23,16 @@ public class HaromAjtoModell
         return ajtok;
     }
 
-    public void setValasztott(AjtoModell lada) 
+    public void setValasztott(AjtoModell ajto) 
     {
-        this.valasztott = lada;
+        this.valasztott = ajto;
     }
 
     public String getValasztott() {
         return valasztott.getSzin();
     }
 
-    public AjtoModell getKincsesLada() 
+    public AjtoModell getAjto() 
     {
         return ajtok.get(1);
     }
