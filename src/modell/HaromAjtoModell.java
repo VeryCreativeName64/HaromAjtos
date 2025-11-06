@@ -36,4 +36,8 @@ public class HaromAjtoModell
     {
         return ajtok.get(1);
     }
+    
+    public boolean isValasztottAuto() {
+    return valasztott != null && valasztott.isAuto();
+}
 }

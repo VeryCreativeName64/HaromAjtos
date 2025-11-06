@@ -49,7 +49,7 @@ public class AjtoController {
                 -> {
                  int valasz = JOptionPane.showConfirmDialog(null, kerdes, "Megerősítés", JOptionPane.YES_NO_OPTION);
                  if (valasz == JOptionPane.YES_OPTION) {
-                     if(modell.getValasztott().equals(true)){
+                     if(modell.isValasztottAuto()){
                          JOptionPane.showMessageDialog(null, "Gratulálunk, hazavihetsz egy luxuskocsit!");
                      }else{
                          JOptionPane.showMessageDialog(null, "Sajnálom, de csak egy kecskét vihetsz haza!");
@@ -60,7 +60,7 @@ public class AjtoController {
                 -> {
                  int valasz = JOptionPane.showConfirmDialog(null, kerdes, "Megerősítés", JOptionPane.YES_NO_OPTION);
                  if (valasz == JOptionPane.YES_OPTION) {
-                     if(modell.getValasztott().equals(true)){
+                     if(modell.isValasztottAuto()){
                          JOptionPane.showMessageDialog(null, "Gratulálunk, hazavihetsz egy luxuskocsit!");
                      }else{
                          JOptionPane.showMessageDialog(null, "Sajnálom, de csak egy kecskét vihetsz haza!");
@@ -71,7 +71,7 @@ public class AjtoController {
                 -> {
                  int valasz = JOptionPane.showConfirmDialog(null, kerdes, "Megerősítés", JOptionPane.YES_NO_OPTION);
                  if (valasz == JOptionPane.YES_OPTION) {
-                     if(modell.getValasztott().equals(true)){
+                     if(modell.isValasztottAuto()){
                          JOptionPane.showMessageDialog(null, "Gratulálunk, hazavihetsz egy luxuskocsit!");
                      }else{
                          JOptionPane.showMessageDialog(null, "Sajnálom, de csak egy kecskét vihetsz haza!");

@@ -68,8 +68,14 @@ public class AjtoView extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Melyik ajtót választod?"));
         jPanel1.setLayout(new java.awt.GridLayout());
+
+        btnElsoAjto.setText("Kék");
         jPanel1.add(btnElsoAjto);
+
+        btnMasodikAjto.setText("Piros");
         jPanel1.add(btnMasodikAjto);
+
+        btnHarmadikAjto.setText("Zöld");
         jPanel1.add(btnHarmadikAjto);
 
         jMenu1.setText("File");

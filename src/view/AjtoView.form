@@ -91,10 +91,19 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnElsoAjto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="K&#xe9;k"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnMasodikAjto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Piros"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnHarmadikAjto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Z&#xf6;ld"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
