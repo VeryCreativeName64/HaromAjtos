@@ -90,17 +90,17 @@
         <Property name="rows" type="int" value="1"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnElsoAjto">
+        <Component class="javax.swing.JButton" name="btnAjto1">
           <Properties>
             <Property name="text" type="java.lang.String" value="K&#xe9;k"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnMasodikAjto">
+        <Component class="javax.swing.JButton" name="btnAjto2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Piros"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnHarmadikAjto">
+        <Component class="javax.swing.JButton" name="btnAjto3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Z&#xf6;ld"/>
           </Properties>

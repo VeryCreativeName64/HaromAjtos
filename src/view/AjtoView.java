@@ -20,28 +20,18 @@ public class AjtoView extends javax.swing.JFrame {
     }
 
     public JButton getBtnElsoAjto() {
-        return btnElsoAjto;
+        return btnAjto1;
     }
 
     public JButton getBtnHarmadikAjto() {
-        return btnHarmadikAjto;
+        return btnAjto3;
     }
 
     public JButton getBtnMasodikAjto() {
-        return btnMasodikAjto;
+        return btnAjto2;
     }
 
-    public void setBtnElsoAjto(String s) {
-        this.btnElsoAjto.setText(s);
-    }
-
-    public void setBtnHarmadikAjto(String s) {
-        this.btnHarmadikAjto.setText(s);
-    }
-
-    public void setBtnMasodikAjto(String s) {
-        this.btnMasodikAjto.setText(s);
-    }
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -53,9 +43,9 @@ public class AjtoView extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btnElsoAjto = new javax.swing.JButton();
-        btnMasodikAjto = new javax.swing.JButton();
-        btnHarmadikAjto = new javax.swing.JButton();
+        btnAjto1 = new javax.swing.JButton();
+        btnAjto2 = new javax.swing.JButton();
+        btnAjto3 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -69,14 +59,14 @@ public class AjtoView extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Melyik ajtót választod?"));
         jPanel1.setLayout(new java.awt.GridLayout());
 
-        btnElsoAjto.setText("Kék");
-        jPanel1.add(btnElsoAjto);
+        btnAjto1.setText("Kék");
+        jPanel1.add(btnAjto1);
 
-        btnMasodikAjto.setText("Piros");
-        jPanel1.add(btnMasodikAjto);
+        btnAjto2.setText("Piros");
+        jPanel1.add(btnAjto2);
 
-        btnHarmadikAjto.setText("Zöld");
-        jPanel1.add(btnHarmadikAjto);
+        btnAjto3.setText("Zöld");
+        jPanel1.add(btnAjto3);
 
         jMenu1.setText("File");
 
@@ -119,9 +109,9 @@ public class AjtoView extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnElsoAjto;
-    private javax.swing.JButton btnHarmadikAjto;
-    private javax.swing.JButton btnMasodikAjto;
+    private javax.swing.JButton btnAjto1;
+    private javax.swing.JButton btnAjto2;
+    private javax.swing.JButton btnAjto3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

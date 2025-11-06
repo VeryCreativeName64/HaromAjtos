@@ -23,60 +23,38 @@ public class AjtoController {
     
     public void eljaras(){
         valasztGomb();
-        ellenorzes();
-    }
-    
-    public void valasztGomb() {
         
-        view.getBtnElsoAjto().addActionListener((ActionEvent e)
-                -> {
-                 
-                 modell.setValasztott(modell.getAjtok().get(0)); 
-        });
-        view.getBtnMasodikAjto().addActionListener((ActionEvent e)
-                -> {
-                 modell.setValasztott(modell.getAjtok().get(1));
-        });
-        view.getBtnHarmadikAjto().addActionListener((ActionEvent e)
-                -> {
-                 modell.setValasztott(modell.getAjtok().get(2));
-        });
     }
     
-    public void ellenorzes(){
-        String kerdes = "Biztos, hogy ezt az ajtót választod?";
-        view.getBtnElsoAjto().addActionListener((ActionEvent e)
-                -> {
-                 int valasz = JOptionPane.showConfirmDialog(null, kerdes, "Megerősítés", JOptionPane.YES_NO_OPTION);
-                 if (valasz == JOptionPane.YES_OPTION) {
-                     if(modell.isValasztottAuto()){
-                         JOptionPane.showMessageDialog(null, "Gratulálunk, hazavihetsz egy luxuskocsit!");
-                     }else{
-                         JOptionPane.showMessageDialog(null, "Sajnálom, de csak egy kecskét vihetsz haza!");
-                     }
-                 }
-        });
-        view.getBtnMasodikAjto().addActionListener((ActionEvent e)
-                -> {
-                 int valasz = JOptionPane.showConfirmDialog(null, kerdes, "Megerősítés", JOptionPane.YES_NO_OPTION);
-                 if (valasz == JOptionPane.YES_OPTION) {
-                     if(modell.isValasztottAuto()){
-                         JOptionPane.showMessageDialog(null, "Gratulálunk, hazavihetsz egy luxuskocsit!");
-                     }else{
-                         JOptionPane.showMessageDialog(null, "Sajnálom, de csak egy kecskét vihetsz haza!");
-                     }
-                 }
-        });
-        view.getBtnHarmadikAjto().addActionListener((ActionEvent e)
-                -> {
-                 int valasz = JOptionPane.showConfirmDialog(null, kerdes, "Megerősítés", JOptionPane.YES_NO_OPTION);
-                 if (valasz == JOptionPane.YES_OPTION) {
-                     if(modell.isValasztottAuto()){
-                         JOptionPane.showMessageDialog(null, "Gratulálunk, hazavihetsz egy luxuskocsit!");
-                     }else{
-                         JOptionPane.showMessageDialog(null, "Sajnálom, de csak egy kecskét vihetsz haza!");
-                     }
-                 }
-        });
+   public void valasztGomb() {
+    String kerdes = "Biztos, hogy ezt az ajtót választod?";
+    
+    view.getBtnElsoAjto().addActionListener((ActionEvent e) -> {
+        modell.setValasztott(modell.getAjtok().get(0));
+        ellenorzes(kerdes);
+    });
+    
+    view.getBtnMasodikAjto().addActionListener((ActionEvent e) -> {
+        modell.setValasztott(modell.getAjtok().get(1));
+        ellenorzes(kerdes);
+    });
+    
+    view.getBtnHarmadikAjto().addActionListener((ActionEvent e) -> {
+        modell.setValasztott(modell.getAjtok().get(2));
+        ellenorzes(kerdes);
+    });
+}
+
+    
+    private void ellenorzes(String kerdes) {
+    int valasz = JOptionPane.showConfirmDialog(null, kerdes, "Megerősítés", JOptionPane.YES_NO_OPTION);
+    if (valasz == JOptionPane.YES_OPTION) {
+        if (modell.isValasztottAuto()) {
+            JOptionPane.showMessageDialog(null, "Gratulálunk, hazavihetsz egy luxuskocsit!");
+        } else {
+            JOptionPane.showMessageDialog(null, "Sajnálom, vesztettél – csak egy kecskét vihetsz haza!");
+        }
     }
+}
+;
 }
