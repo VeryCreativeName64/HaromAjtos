@@ -18,6 +18,14 @@ public class AjtoModell {
         return auto;
     }
 
+    public void setSzin(String szin) {
+        this.szin = szin;
+    }
+
+    public void setAuto(boolean auto) {
+        this.auto = auto;
+    }
+
     
     
     

@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author marek.b.kristof
@@ -17,6 +19,18 @@ public class AjtoView extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getBtnElsoAjto() {
+        return btnElsoAjto;
+    }
+
+    public JButton getBtnHarmadikAjto() {
+        return btnHarmadikAjto;
+    }
+
+    public JButton getBtnMasodikAjto() {
+        return btnMasodikAjto;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
